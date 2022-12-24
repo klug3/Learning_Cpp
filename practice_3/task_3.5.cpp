@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+
 int main()
 {
     double a;
