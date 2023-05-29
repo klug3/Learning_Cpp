@@ -15,5 +15,25 @@ using std::vector;
 
 vector<int> solution(vector<string> &S)
 {
-    // Implement your solution here
+    int first_str;
+    int second_str;
+    int pos;
+
+    for (int i = 0; i < (S.size() - 1); i++)
+    {
+        for (int j = i + 1; j < S.size(); j++)
+        {
+            for (int k = 0; k < S[i].length(); k++)
+            {
+                if (S[i][k] == S[j][k])
+                {
+                    first_str = i;
+                    second_str = j;
+                    pos = k;
+                    return vector<int>{first_str, second_str, pos};
+                }
+            }
+        }
+    }
+    return vector<int>{};
 }
