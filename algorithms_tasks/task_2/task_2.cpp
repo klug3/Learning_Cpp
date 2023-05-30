@@ -8,8 +8,6 @@ required to obtain a string containing no instances of three identical consecuti
 #include <iostream>
 #include <vector>
 
-using std::cout;
-using std::endl;
 using std::string;
 using std::vector;
 
